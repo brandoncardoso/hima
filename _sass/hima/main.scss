@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+$background: #f9f5d7;
+$foreground: #1d2021;
+
+body {
+  background: $background;
+  color: $foreground;
+  font: 400 100%/1.5 system-ui, Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+}
