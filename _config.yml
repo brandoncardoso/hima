@@ -3,6 +3,10 @@ author:
   name: Your name
   email: youremail@domain.com
 
+header_pages:
+  - work.md
+  - about.md
+  - contact.md
 
 # build settings
 theme: hima

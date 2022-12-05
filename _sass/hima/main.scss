@@ -35,6 +35,21 @@ body {
     font-size: 2rem;
     text-align: center;
   }
+
+  &__nav {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    li + li {
+      margin-top: 0;
+      margin-left: 3rem;
+    }
+  }
 }
 
 .content {
