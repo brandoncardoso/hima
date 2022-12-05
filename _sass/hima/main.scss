@@ -3,22 +3,44 @@
 $background: #f9f5d7;
 $foreground: #1d2021;
 
+$content-padding: 2rem;
+$content-width: 50rem;
+
+
 body {
   background: $background;
   color: $foreground;
   font: 400 100%/1.5 system-ui, Roboto, Helvetica, Arial, sans-serif;
-  margin: 2rem;
+  margin: 0;
+  line-height: 1.75;
 }
 
 * + * {
   margin-top: 1rem;
 }
 
+[class*="__container"] {
+  padding-left: $content-padding;
+  padding-right: $content-padding;
+  width: calc(#{$content-width} - (2 * #{$content-padding}))
+}
+
 .header {
+  display: flex;
+  justify-content: center;
   margin-top: 4rem;
   margin-bottom: 2rem;
 
   &__title {
     font-size: 2rem;
+    text-align: center;
   }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
