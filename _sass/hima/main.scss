@@ -1,14 +1,16 @@
 @charset "utf-8";
+@import './fonts';
 
 $background: #f9f5d7;
 $foreground: #1d2021;
 
 $gray: #928374;
+$white: #faf6e8;
 
 $content-padding: 2rem;
 $content-width: 70rem;
 
-$header-margin-top: 4rem;
+$header-margin-top: 8rem;
 $header-height: 8rem;
 $header-pinned-height: 4rem;
 
@@ -16,7 +18,7 @@ $header-pinned-height: 4rem;
 body {
   background: $background;
   color: $foreground;
-  font: 400 100%/1.5 system-ui, Roboto, Helvetica, Arial, sans-serif;
+  font: 400 100%/1.5 OpenSans, system-ui, Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
   line-height: 1.75;
 }
@@ -43,7 +45,7 @@ body {
   -webkit-font-smoothing: antialiased;
 
   &--pinned {
-    background: white;
+    background: $white;
     box-shadow: 0 -1rem 2rem 0 $gray;
   }
 
@@ -53,6 +55,10 @@ body {
       flex-direction: row;
       justify-content: space-between;
       height: $header-pinned-height;
+    }
+
+    &__title {
+      font-size: 1.67rem;
     }
 
     &__nav {
@@ -66,8 +72,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    text-align: center;
+    font-size: 3rem;
+    font-family: Oswald;
+    font-variation-settings: "wght" 800;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: $foreground;
+    }
   }
 
   &__nav {
