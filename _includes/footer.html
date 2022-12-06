@@ -1,0 +1,25 @@
+<div class="footer">
+  <div class="footer__container">
+    <ul class="footer__social">
+      {%- for entry in site.hima.social -%}
+      <li class="footer__social-link">
+        <a rel="me" href="{{ entry.url }}" target="_blank" title="{{ entry.title | default: entry.platform }}">
+          <svg>
+            <use xlink:href="{{ '/assets/hima-social-icons.svg#' | append: entry.platform | relative_url }}"></use>
+          </svg>
+        </a>
+      </li>
+      {%- endfor -%}
+    </ul>
+    <div class="footer__author">
+      <div class="footer__name">
+        {{ site.author.name }}
+      </div>
+      <div class="footer__email">
+        <a href="{{ "mailto:" | append: site.author.email }}">
+          {{ site.author.email }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

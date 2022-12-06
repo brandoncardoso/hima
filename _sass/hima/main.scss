@@ -59,3 +59,42 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__social-link {
+    margin-top: 0;
+
+    & + .footer__social-link {
+      margin-left: 4rem;
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__email {
+    margin-top: 0;
+  }
+}

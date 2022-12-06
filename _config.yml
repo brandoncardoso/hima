@@ -8,5 +8,11 @@ header_pages:
   - about.md
   - contact.md
 
+hima:
+  social:
+    - { platform: github, url: 'https://www.github.com' }
+    - { platform: linkedin, url: 'https://www.linkedin.com' }
+    - { platform: instagram, url: 'https://www.instagram.com' }
+
 # build settings
 theme: hima
