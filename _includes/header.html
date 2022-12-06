@@ -24,3 +24,17 @@
     {%- endif -%}
   </div>
 </div>
+
+<script>
+  const header = document.querySelector('.header')
+  const container = header.querySelector('.header__container')
+  const trigger = header.offsetHeight - container.offsetTop
+
+  window.addEventListener("scroll", (event) => {
+    if (window.scrollY > trigger) {
+      header.classList.add('header--pinned')
+    } else {
+      header.classList.remove('header--pinned')
+    }
+  })
+</script>
