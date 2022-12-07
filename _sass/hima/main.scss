@@ -5,11 +5,16 @@ $background: #f9f5d7;
 $foreground: #1d2021;
 
 $blue: #065567;
+$blue-light: #83a598;
+$yellow: #fabd2f;
+
+$gray-dark: #504945;
 $gray: #928374;
+$gray-light: #fbf1c7;
 $white: #faf6e8;
 
 $content-padding: 2rem;
-$content-width: 70rem;
+$content-width: 60rem;
 
 $header-margin-top: 8rem;
 $header-height: 8rem;
@@ -231,4 +236,28 @@ a {
   &__author {
     color: $gray-dark;
   }
+}
+
+blockquote {
+  background: $white;
+  margin: 0;
+  padding: 1rem 2rem 1rem;
+  border-left: .2rem solid $yellow;
+  font-style: italic;
+
+  p {
+    margin: 0;
+  }
+
+  em {
+    font-variation-settings: "wght" 600;
+  }
+}
+
+pre.highlight {
+  background: $gray-light;
+  padding: 1rem;
+  margin: 0;
+  border: .2rem solid $blue-light;
+  border-radius: .2rem;
 }
