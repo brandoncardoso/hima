@@ -31,10 +31,19 @@ body {
   margin-top: 1rem;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: Oswald;
-  text-transform: uppercase;
   margin-top: 2rem;
+  font-weight: normal;
+}
+
+h1, h2 {
+  font-variation-settings: "wght" 600;
+  text-transform: uppercase;
+}
+
+h3, h4 {
+  font-variation-settings: "wght" 400;
 }
 
 a {
@@ -206,5 +215,20 @@ a {
     p {
       margin: 0;
     }
+  }
+}
+
+.post {
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__date,
+  &__author {
+    color: $gray-dark;
   }
 }

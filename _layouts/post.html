@@ -2,4 +2,16 @@
 layout: default
 ---
 
-{{ content }}
+<div class="post">
+  <div class="post__header">
+    <h1 class="post__title">{{ page.title | escape }}</h1>
+    {%- assign date_format = site.hima.date_format | default: "%b %-d, %Y" -%}
+    <span class="post__author">by {{ page.author | join: ", " }}</span>
+    <span class="post__date">on {{ page.date | date: date_format }}</span>
+  </div>
+
+  <div class="post__content">
+  {{ content }}
+  </div>
+
+</div>
