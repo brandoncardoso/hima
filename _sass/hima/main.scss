@@ -16,6 +16,10 @@ $header-height: 8rem;
 $header-pinned-height: 4rem;
 
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   background: $background;
   color: $foreground;
