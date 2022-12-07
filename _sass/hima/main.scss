@@ -4,6 +4,7 @@
 $background: #f9f5d7;
 $foreground: #1d2021;
 
+$blue: #065567;
 $gray: #928374;
 $white: #faf6e8;
 
@@ -18,13 +19,31 @@ $header-pinned-height: 4rem;
 body {
   background: $background;
   color: $foreground;
-  font: 400 100%/1.5 OpenSans, system-ui, Roboto, Helvetica, Arial, sans-serif;
+  font: 400 100%/1.75 OpenSans, system-ui, Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
-  line-height: 1.75;
 }
 
 * + * {
   margin-top: 1rem;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  border-bottom: .15rem solid $blue;
+
+  &:hover {
+    font-weight: bold;
+  }
+
+  .header & {
+    border-bottom: none;
+    color: $foreground;
+  }
+
+  .footer__social-link & {
+    border-bottom: none;
+  }
 }
 
 [class*="__container"] {
@@ -80,6 +99,10 @@ body {
     a {
       text-decoration: none;
       color: $foreground;
+
+      &:hover {
+        font-weight: unset;
+      }
     }
   }
 
