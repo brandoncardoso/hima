@@ -10,7 +10,9 @@ $yellow: #fabd2f;
 
 $gray-dark: #504945;
 $gray: #928374;
-$gray-light: #fbf1c7;
+$gray-light: #ebdbb2;
+$gray-lighter: #fbf1c7;
+$gray-lightest: #fffdd9;
 $white: #faf6e8;
 
 $content-padding: 2rem;
@@ -255,9 +257,28 @@ blockquote {
 }
 
 pre.highlight {
-  background: $gray-light;
+  background: $gray-lighter;
   padding: 1rem;
   margin: 0;
   border: .2rem solid $blue-light;
   border-radius: .2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: $gray-lightest;
+
+  thead tr {
+    background: $gray-light;
+    border-bottom: .2rem solid $gray;
+  }
+
+  th, td {
+    padding: .5rem .67rem;
+  }
+
+  tr:nth-child(even) {
+    background: $gray-lighter;
+  }
 }
