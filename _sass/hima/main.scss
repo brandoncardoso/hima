@@ -31,6 +31,12 @@ body {
   margin-top: 1rem;
 }
 
+h1, h2 {
+  font-family: Oswald;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
 a {
   color: $blue;
   text-decoration: none;
@@ -53,7 +59,8 @@ a {
 [class*="__container"] {
   padding-left: $content-padding;
   padding-right: $content-padding;
-  width: calc(#{$content-width} - (2 * #{$content-padding}))
+  max-width: calc(#{$content-width} - (2 * #{$content-padding}));
+  width: 100%;
 }
 
 .header {
@@ -170,5 +177,34 @@ a {
 
   &__email {
     margin-top: 0;
+  }
+}
+
+.post-list-title {
+  margin-top: 4rem;
+}
+
+.post-list {
+  list-style-type: none;
+  padding-left: 0;
+
+  &__post {
+    & + .post-list__post {
+      margin-top: 2rem;
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__date {
+    color: $gray;
+  }
+
+  &__excerpt {
+    p {
+      margin: 0;
+    }
   }
 }
