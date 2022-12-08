@@ -244,7 +244,9 @@ blockquote {
   background: $white;
   margin: 0;
   padding: 1rem 2rem 1rem;
-  border-left: .2rem solid $yellow;
+  border-left: .3rem solid $yellow;
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
   font-style: italic;
 
   p {
@@ -256,29 +258,49 @@ blockquote {
   }
 }
 
+
 pre.highlight {
+  margin: 0;
   background: $gray-lighter;
   padding: 1rem;
-  margin: 0;
-  border: .2rem solid $blue-light;
-  border-radius: .2rem;
+  border-left: .3rem solid $blue-light;
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+
+  code {
+    padding: 0;
+    border: none;
+  }
+}
+
+code {
+  padding: .2rem .25rem;
+  background: $gray-lighter;
+  border-radius: .25rem;
+  border: .2rem dotted $gray-light;
+  font-family: FiraCode;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  background: $gray-lightest;
+  background: $white;
 
   thead tr {
-    background: $gray-light;
-    border-bottom: .2rem solid $gray;
+    background: $gray-lighter;
+    border-bottom: .2rem solid $gray-light;
   }
 
   th, td {
     padding: .5rem .67rem;
   }
 
-  tr:nth-child(even) {
-    background: $gray-lighter;
+  tr + tr {
+    border-top: 2px solid $gray-light
+  }
+
+  th + th,
+  td + td {
+    border-left: 2px solid $gray-light
   }
 }
