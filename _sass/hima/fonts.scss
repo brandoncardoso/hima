@@ -1,14 +1,20 @@
 @font-face {
   font-family: 'Oswald';
-  src: url('../fonts/Oswald.ttf') format('truetype');
+  src:
+    local('Oswald'),
+    url('../fonts/Oswald.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url('../fonts/OpenSans.ttf') format('truetype');
+  src:
+    local('Open Sans'),
+    url('../fonts/OpenSans.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'FiraCode';
-  src: url('../fonts/FiraCode.ttf') format('truetype');
+  src:
+    local('Fira Code'),
+    url('../fonts/FiraCode.ttf') format('truetype');
 }
