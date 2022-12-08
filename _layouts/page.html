@@ -2,4 +2,12 @@
 layout: default
 ---
 
-{{ content }}
+<div class="post">
+  <div class="post__header">
+    <h1 class="post__title">{{ page.title | escape }}</h1>
+  </div>
+
+  <div class="post__content">
+  {{ content }}
+  </div>
+</div>
