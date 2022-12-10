@@ -225,6 +225,10 @@ a {
   text-align: justify;
   margin-top: 2rem;
   margin-bottom: 2rem;
+
+  &__container {
+    overflow: auto;
+  }
 }
 
 .footer {
@@ -331,6 +335,7 @@ blockquote {
 
 pre {
   padding: 1rem;
+  overflow-x: auto;
 
   &.highlight {
     border: none;
@@ -356,12 +361,15 @@ code {
   border-radius: .25rem;
   border: .2rem dotted $gray-light;
   font-family: FiraCode;
+  overflow-x: auto;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   background: $white;
+  overflow-x: auto;
+  display: block;
 
   thead tr {
     background: $gray-lighter;
