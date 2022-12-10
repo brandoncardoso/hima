@@ -16,12 +16,15 @@ $gray-lightest: #fffdd9;
 $white: #faf6e8;
 
 $content-padding: 2rem;
+$content-padding-mobile: 1rem;
 $content-width: 60rem;
 
 $header-margin-top: 4rem;
 $header-height: 8rem;
 $header-pinned-height: 4rem;
 
+$on-mobile: 425px;
+$on-tablet: 800px;
 
 html {
   overflow-y: scroll;
@@ -81,6 +84,12 @@ a {
   padding-right: $content-padding;
   max-width: calc(#{$content-width} - (2 * #{$content-padding}));
   width: 100%;
+
+  @media (max-width: $on-mobile) {
+    padding-left: $content-padding-mobile;
+    padding-right: $content-padding-mobile;
+    max-width: calc(#{$content-width} - (2 * #{$content-padding-mobile}));
+  }
 }
 
 .header {
@@ -109,6 +118,9 @@ a {
 
     &__title {
       font-size: 1.67rem;
+      @media (max-width: $on-mobile) {
+        font-size: 1.33rem;
+      }
     }
 
     &__nav {
