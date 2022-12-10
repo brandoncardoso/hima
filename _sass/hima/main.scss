@@ -103,33 +103,6 @@ a {
   transition: 0.2s ease;
   -webkit-font-smoothing: antialiased;
 
-  &--pinned {
-    background: $white;
-    box-shadow: 0 -1rem 2rem 0 $gray;
-  }
-
-  &--pinned & {
-    &__container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      height: $header-pinned-height;
-    }
-
-    &__title {
-      font-size: 1.67rem;
-      @media (max-width: $on-mobile) {
-        font-size: 1.33rem;
-      }
-    }
-
-    &__nav {
-      margin-top: 0;
-      display: flex;
-      align-items: center;
-    }
-  }
-
   &__title {
     display: flex;
     justify-content: center;
@@ -149,18 +122,99 @@ a {
     }
   }
 
-  &__nav {
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+  &__nav-toggle {
+    display: none;
+  }
+
+  label[for="nav-toggle"] {
+    display: none;
+    margin-top: 0;
+    height: 24px;
+  }
+
+  &__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    margin: 0 2rem;
+  }
+
+  &--pinned {
+    background: $white;
+    box-shadow: 0 -1rem 2rem 0 $gray;
+  }
+
+  &--pinned & {
+    &__container {
       display: flex;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
+      height: $header-pinned-height;
+      position: relative;
     }
 
-    li + li {
+    &__title {
+      font-size: 1.67rem;
+      @media (max-width: $on-mobile) {
+        font-size: 1.33rem;
+      }
+    }
+
+    &__nav {
       margin-top: 0;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: $on-tablet) {
+        background: $white;
+        flex-direction: column;
+        align-items:end;
+        position: absolute;
+        border: .2rem solid $gray-light;
+        border-radius: .25rem;
+        right: $content-padding;
+        top: .67rem;
+        padding: .5rem;
+      }
+
+      @media (max-width: $on-mobile) {
+        right: $content-padding-mobile;
+      }
+    }
+
+    &__link {
+      margin: 0;
       margin-left: 3rem;
+
+      @media (max-width: $on-tablet) {
+        text-align: right;
+        margin-top: .67rem;
+        margin-left: 1rem;
+      }
+    }
+
+    &__nav label[for="nav-toggle"] {
+      @media (max-width: $on-tablet) {
+        display: block;
+      }
+    }
+
+    &__nav-toggle ~ .header__links {
+      @media (max-width: $on-tablet) {
+        display: none;
+      }
+    }
+
+    &__nav-toggle:checked ~ .header__links {
+      @media (max-width: $on-tablet) {
+        display: block;
+      }
     }
   }
 }
