@@ -372,8 +372,11 @@ table {
   width: 100%;
   border-collapse: collapse;
   background: $white;
-  overflow-x: auto;
-  display: block;
+
+  @media (max-width: $on-tablet) {
+    display: block;
+    overflow-x: auto;
+  }
 
   thead tr {
     background: $gray-lighter;
