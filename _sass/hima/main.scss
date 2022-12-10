@@ -61,6 +61,10 @@ h3 {
   font-size: 1.33rem;
 }
 
+p {
+  text-align: justify;
+}
+
 a {
   color: $blue;
   text-decoration: none;
@@ -223,7 +227,6 @@ a {
 .content {
   display: flex;
   justify-content: center;
-  text-align: justify;
   margin-top: 2rem;
   margin-bottom: 2rem;
 
