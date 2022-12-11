@@ -112,10 +112,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: Oswald;
     font-variation-settings: "wght" 800;
     text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
 
     a {
       text-decoration: none;
@@ -309,7 +311,8 @@ a {
   }
 
   &__title {
-    margin-bottom: 0;
+    margin-bottom: .5rem;;
+    line-height: 1.2;
   }
 
   &__date,
