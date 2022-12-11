@@ -1,0 +1,31 @@
+@import '../syntax/gruvbox-dark';
+@import './gruvbox';
+
+$white: #faf6e8;
+
+$foreground: $white0h;
+$background: $black0;
+
+$link-colour: $blue-light;
+
+$header-pinned-background: $black0h;
+$header-pinned-boxshadow: black;
+
+$nav-pinned-border: $black1;
+$nav-menu-icon-fill: $foreground;
+$social-icon-fill: $foreground;
+
+$post-meta-colour: $white0s;
+
+$quote-background: $black0h;
+$quote-border: $yellow;
+
+$codeblock-border: $black3;
+$codeblock-border-accent: $aqua;
+$code-border: $aqua;
+$inline-code-background: $black0h;
+
+$table-background: $black1;
+$table-header-background: $black0h;
+$table-header-bottom-border: $black0;
+$table-row-border: $black0;
