@@ -4,10 +4,10 @@ layout: default
 
 <div class="post">
   <div class="post__header">
-    <h1 class="post__title">{{ page.title | escape }}</h1>
+    <h1 id="post-title" class="post__title">{{ page.title | escape }}</h1>
   </div>
 
-  <div class="post__content">
+  <section aria-labelledby="post-title" class="post__content">
   {{ content }}
-  </div>
+  </section>
 </div>

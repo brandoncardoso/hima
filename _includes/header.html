@@ -2,7 +2,7 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
 
-<div class="header">
+<header class="header">
   <div class="header__container">
     <div class="header__title">
       <a href="/">{{ site.title }}</a>
@@ -28,7 +28,7 @@
     </nav>
     {%- endif -%}
   </div>
-</div>
+</header>
 
 <script>
   const header = document.querySelector('.header')

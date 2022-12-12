@@ -6,7 +6,8 @@ layout: default
 </div>
 
 {%- if site.posts.size > 0 -%}
-<h2 class="post-list-title">Posts</h2>
+<h2 id="post-list-title" class="post-list-title">Posts</h2>
+<section aria-labelledby="post-list-title">
 <ul class="post-list">
   {%- for post in site.posts -%}
   <li class="post-list__post">
@@ -19,4 +20,5 @@ layout: default
   </li>
   {%- endfor -%}
 </ul>
+</section>
 {%- endif -%}
