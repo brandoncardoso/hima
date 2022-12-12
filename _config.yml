@@ -17,3 +17,6 @@ hima:
 
 # build settings
 theme: hima
+
+plugins:
+  - jekyll-seo-tag
