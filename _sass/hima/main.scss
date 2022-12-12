@@ -328,7 +328,6 @@ blockquote {
 
 pre {
   padding: 1rem;
-  overflow-x: auto;
 
   &.highlight {
     border: none;
@@ -340,6 +339,7 @@ pre {
   border: .1rem solid $codeblock-border;
   border-left: .3rem solid $codeblock-border-accent;
   border-radius: .25rem;
+  overflow-x: auto;
 
   code {
     padding: 0;
