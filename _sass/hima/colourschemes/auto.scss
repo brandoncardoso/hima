@@ -1,0 +1,9 @@
+@media (prefers-color-scheme: light) {
+  @import './_gruvbox-light-theme';
+}
+
+@media (prefers-color-scheme: dark) {
+  @import './_gruvbox-dark-theme';
+}
+
+@import './base';

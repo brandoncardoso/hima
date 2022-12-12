@@ -9,7 +9,7 @@ header_pages:
   - contact.md
 
 hima:
-  colourscheme: 'light'
+  colourscheme: 'auto'
   social:
     - { platform: github, url: 'https://www.github.com' }
     - { platform: linkedin, url: 'https://www.linkedin.com' }

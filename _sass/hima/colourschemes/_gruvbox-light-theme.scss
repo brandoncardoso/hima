@@ -1,0 +1,33 @@
+@import './_syntax/gruvbox-light';
+@import './_gruvbox-colours';
+
+$white: #faf6e8;
+
+:root {
+  --hima-foreground: #{$black0h};
+  --hima-background: #{$white0h};
+
+  --hima-link-colour: #{$blue-dark};
+
+  --hima-header-pinned-background: #{$white};
+  --hima-header-pinned-boxshadow: #{$gray};
+
+  --hima-nav-pinned-border: #{$white1};
+  --hima-nav-menu-icon-fill: #{$black0h};
+  --hima-social-icon-fill: #{$black0h};
+
+  --hima-post-meta-colour: #{$black2};
+
+  --hima-quote-background: #{$white};
+  --hima-quote-border: #{$yellow-light};
+
+  --hima-codeblock-border: #{$white2};
+  --hima-codeblock-border-accent: #{$aqua-light};
+  --hima-code-border: #{$aqua-light};
+  --hima-inline-code-background: #{$white0};
+
+  --hima-table-background: #{$white};
+  --hima-table-header-background: #{$white0};
+  --hima-table-header-bottom-border: #{$white1};
+  --hima-table-row-border: #{$white1};
+}
