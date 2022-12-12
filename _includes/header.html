@@ -5,7 +5,11 @@
 <header class="header">
   <div class="header__container">
     <div class="header__title">
+      {%- if page.layout == 'home' -%}
+      <h1><a href="/">{{ site.title }}</a></h1>
+      {%- else -%}
       <a href="/">{{ site.title }}</a>
+      {%- endif -%}
     </div>
 
     {%- if titles_size > 0 -%}
