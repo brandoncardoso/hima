@@ -8,7 +8,7 @@ layout: default
 {%- if site.posts.size > 0 -%}
 <h2 id="post-list-title" class="post-list-title">Posts</h2>
 <section aria-labelledby="post-list-title">
-<ul class="post-list">
+<ol class="post-list">
   {%- for post in site.posts -%}
   <li class="post-list__post">
     {%- assign date_format = site.hima.date_format | default: "%b %-d, %Y" -%}
