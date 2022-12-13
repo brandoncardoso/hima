@@ -3,8 +3,13 @@ permalink: /assets/hima-social-icons.svg
 ---
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<symbol id="rss" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" viewBox="0 0 24 24">
+  {%- include social-icons/rss.svg -%}
+</symbol>
+
 {%- for entry in site.hima.social %}{% assign key = entry.platform -%}
-<symbol id="{{ key }}" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" viewBox="0 0 16 16">
+<symbol id="{{ key }}" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" viewBox="0 0 24 24">
   {%- include social-icons/{{ key }}.svg -%}
 </symbol>
 {%- endfor -%}

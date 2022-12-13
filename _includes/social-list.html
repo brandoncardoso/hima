@@ -1,4 +1,12 @@
 <ul class="social-list">
+  <li class="social-list__link">
+    <a rel="me" href="{{ 'feed.xml' | relative_url }}" aria-label="rss feed">
+      <svg aria-hidden="true">
+        <use xlink:href="{{ '/assets/hima-social-icons.svg#rss' | relative_url }}"></use>
+      </svg>
+    </a>
+  </li>
+
   {%- for entry in site.hima.social -%}
   <li class="social-list__link">
     <a rel="me" href="{{ entry.url }}" target="_blank" aria-label="{{ entry.label | default: entry.platform }}">
