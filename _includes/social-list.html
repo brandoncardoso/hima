@@ -1,0 +1,11 @@
+<ul class="social-list">
+  {%- for entry in site.hima.social -%}
+  <li class="social-list__link">
+    <a rel="me" href="{{ entry.url }}" target="_blank" aria-label="{{ entry.label | default: entry.platform }}">
+      <svg aria-hidden="true">
+        <use xlink:href="{{ '/assets/hima-social-icons.svg#' | append: entry.platform | relative_url }}"></use>
+      </svg>
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>

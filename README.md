@@ -46,6 +46,7 @@ Refers to files within the `_layouts` directory, that define the markup for your
   - `header.html` &mdash; Defines the site's main header section. By default, pages with a defined `title` attribute will have links displayed here. See [Navigation Links](#navigation-links) to customize.
   - `google-analytics.html` &mdash; Inserts Google Analytics module (active only in production environment).
   - `footer.html` &mdash; Defines the site's footer section.
+  - `social-list.html` &mdash; Defines how social media links are listed in the footer.
   - `social-icons/*.svg` &mdash; SVG markup components of supported social-icons.
 
 ### Sass

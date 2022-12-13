@@ -60,7 +60,7 @@ a {
     color: $foreground;
   }
 
-  .footer__social-link & {
+  .social-list__link & {
     border-bottom: none;
     fill: $social-icon-fill;
   }
@@ -224,25 +224,18 @@ a {
   }
 }
 
-.footer {
+.social-list {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin-top: 4rem;
-  margin-bottom: 8rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 
-  &__social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  &__social-link {
+  &__link {
     margin-top: 0;
 
-    & + .footer__social-link {
+    & + .social-list__link {
       margin-left: 4rem;
     }
 
@@ -251,6 +244,13 @@ a {
       height: 2rem;
     }
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
 
   &__author {
     display: flex;
