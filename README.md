@@ -1,10 +1,6 @@
 # hima
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+hima is a simple Jekyll theme with the goal of being accessible to everyone, and follows [The A11y Project's accessibility guidelines](https://www.a11yproject.com/checklist/).
 
 ## Installation
 
@@ -27,23 +23,157 @@ And then execute:
 Or install it yourself as:
 
     $ gem install hima
+    
+## Content
+
+### Layouts
+
+Refers to files within the `_layouts` directory, that define the markup for your theme.
+
+  - `default.html` &mdash; The base layout that lays the foundation for subsequent layouts. The derived layouts inject their contents into this file at the line that says ` {{ content }} ` and are linked to this file via [FrontMatter](https://jekyllrb.com/docs/frontmatter/) declaration `layout: default`.
+  - `home.html` &mdash; The layout for your landing-page / home-page / index-page. [[More Info.](#home-layout)]
+  - `page.html` &mdash; The layout for your documents that contain FrontMatter, but are not posts.
+  - `post.html` &mdash; The layout for your posts.
+  
+#### Home Layout
+
+`home.html` is a flexible HTML layout for the site's landing-page / home-page / index-page. It will inject the content before the **Posts** heading. The posts list will only appear if you have at least one valid post, or draft with `show_drafts` enabled on your site.
+
+### Includes
+
+  - `head.html` &mdash; Code-block that defines the `<head></head>` in *default* layout.
+  - `custom-head.html` &mdash; Placeholder to allow users to add more metadata to `<head />`.
+  - `header.html` &mdash; Defines the site's main header section. By default, pages with a defined `title` attribute will have links displayed here. See [Navigation Links](#navigation-links) to customize.
+  - `google-analytics.html` &mdash; Inserts Google Analytics module (active only in production environment).
+  - `footer.html` &mdash; Defines the site's footer section.
+  - `social-icons/*.svg` &mdash; SVG markup components of supported social-icons.
+
+### Sass
+
+Refers to `.scss` files within the `_sass` directory that define the theme's styles.
+
+  - `hima/colourschemes/auto.scss` &mdash; An adaptive colourscheme that switches between light and dark mode depending on your site visitors' preference. *Used by default.*
+  - `minima/initialize.scss` &mdash; A component that defines the theme's *skin-agnostic* variable defaults and sass partials.
+    It imports the following components (in the following order):
+    - `hima/custom-variables.scss` &mdash; A hook that allows overriding variable defaults and mixins. (*Note: Cannot override styles*)
+    - `hima/main.scss` &mdash; Style rules for the theme.
+    - `hima/custom-styles.scss` &mdash; A hook that allows overriding styles defined above. (*Note: Cannot override variables*)
+
+Refer to the [Colour Schemes](#colour-schemes) section for more details.
+
+### Assets
+
+Refers to various asset files within the `assets` directory.
+
+  - `assets/css/style.scss` &mdash; Imports sass files from within the `_sass` directory and gets processed into the theme's stylesheet: `assets/css/styles.css`.
+  - `assets/hima-social-icons.html` &mdash; Imports enabled social-media icon graphics and gets processed into a composite SVG file.
+  
+Refer to the [Social Networks](#social-networks) section for more details.
+
+### Plugins
+
+Hima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) for how to set it up.
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Add the following line to your `_config.yml` file:
+
+```yaml
+theme: hima
+```
+
+### Customizing
+
+To override the default structure and style of hima, simply create a copy a copy of the files/layouts/includes you wish the modify in the same directory structure on your site's root.
+e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from the hima gem folder to `<yoursite>/_includes` and start editing that file.
+
+You can override any Sass variables and mixins by redefining them in `_sass/hima/custom-variables.scss`. Custom CSS rules can be added in `_sass/hima/custom-styles.scss`.
+
+### Colour Schemes
+
+To switch to another colour scheme, simply declare it in your site's `_config.yml` file. For example, to use the dark colour scheme, you would add the following:
+
+```yaml
+hima:
+  colourscheme: dark
+```
+
+#### Available Colour Schemes
+
+Name            | Description
+--------------- | -----------
+auto            | *Adaptive colour scheme* using the light and dark colour schemes.
+dark            | Dark colour scheme based on gruvbox.
+light           | Light colour scheme based on gruvbox.
+
+*:bulb: Adaptive colourscheme switchs between the "light" and "dark" variants based on the user's operating system  or browser setting via CSS Media Query [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).*
+
+### Navigation Links
+
+You can set which pages you want to appear in the navigation area and configure their order.
+For instance, to only shows links to your `about` and `contact` pages, add the following to your `_config.yml`:
+
+```yaml
+header_pages:
+  - about.md
+  - contact.md
+```
+### Extending the `<head>` Tag
+
+You can add custom metadata to the `<head>` tag of your pages by creating `_includes/custom-head.html`.
+
+### Author Metadata
+
+Inside your `_config.yml` file, add informatin about your site's author.
+
+```yaml
+author:
+  name: John Smith
+  email: "john.smith@foobar.com"
+```
+
+### Social Networks
+
+You can add links to the accounts you have on other sites, with respective icon as an SVG graphic, via the config file. The link data is sourced from the config key `hima.social`. It is a list of key-value pairs, each entry
+corresponding to a link and rendered in the footer.
+
+For example, to render links to Jekyll's GitHub repository and twitter account, you would add:
+
+```yaml
+hima:
+  social:
+    - { platform: github,  url: "https://github.com/jekyll/jekyll" }
+    - { platform: twitter, url: "https://twitter.com/jekyllrb" }
+```
+The `platform` key corresponds to the SVG file name in `/_includes/social-icons/`.
+
+hima includes icons for the following platforms:
+
+- `github`
+- `instagram`
+- `linkedin`
+
+To render a link to a platform not listed above, your should first create an SVG file like`_includes/social-icons/<PLATFORM>.svg`). Then add an entry under `hima.social` in your config file. The social links are rendered in the order they appear in your config file.
+
+### Enabling Google Analytics
+
+To enable Google Analytics, add the following line to your `_config.yml`:
+
+```yaml
+  google_analytics_measurement_id: <YOUR MEASUREMENT ID>
+```
+
+Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/brandoncardoso/hima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
 ## Development
 
 To set up your environment to develop this theme, run `bundle install`.
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `hima.gemspec` accordingly.
+To test locally, run `./scripts/serve` to start a local Jekyll server, and open `http://localhost:4000` in your browser. As you make modifications, it will automatically regenerate and you should see the changes in your browser.
 
 ## License
 
