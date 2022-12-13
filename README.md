@@ -23,7 +23,7 @@ And then execute:
 Or install it yourself as:
 
     $ gem install hima
-    
+
 ## Content
 
 ### Layouts
@@ -34,7 +34,7 @@ Refers to files within the `_layouts` directory, that define the markup for your
   - `home.html` &mdash; The layout for your landing-page / home-page / index-page. [[More Info.](#home-layout)]
   - `page.html` &mdash; The layout for your documents that contain FrontMatter, but are not posts.
   - `post.html` &mdash; The layout for your posts.
-  
+
 #### Home Layout
 
 `home.html` is a flexible HTML layout for the site's landing-page / home-page / index-page. It will inject the content before the **Posts** heading. The posts list will only appear if you have at least one valid post, or draft with `show_drafts` enabled on your site.
@@ -67,7 +67,7 @@ Refers to various asset files within the `assets` directory.
 
   - `assets/css/style.scss` &mdash; Imports sass files from within the `_sass` directory and gets processed into the theme's stylesheet: `assets/css/styles.css`.
   - `assets/hima-social-icons.html` &mdash; Imports enabled social-media icon graphics and gets processed into a composite SVG file.
-  
+
 Refer to the [Social Networks](#social-networks) section for more details.
 
 ### Plugins
@@ -142,10 +142,10 @@ For example, to render links to Jekyll's GitHub repository and twitter account, 
 ```yaml
 hima:
   social:
-    - { platform: github,  url: "https://github.com/jekyll/jekyll" }
+    - { platform: github,  url: "https://github.com/jekyll/jekyll", label: "Jekyll's github repo" }
     - { platform: twitter, url: "https://twitter.com/jekyllrb" }
 ```
-The `platform` key corresponds to the SVG file name in `/_includes/social-icons/`.
+The `platform` key corresponds to the SVG file name in `/_includes/social-icons/`. You can include the optional `label` value which will be used for the link's aria-label (defaults to `platform`).
 
 hima includes icons for the following platforms:
 
