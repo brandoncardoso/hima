@@ -4,9 +4,8 @@ author:
   email: youremail@domain.com
 
 header_pages:
-  - work.md
+  - users.md
   - about.md
-  - contact.md
 
 hima:
   colourscheme: 'auto'
