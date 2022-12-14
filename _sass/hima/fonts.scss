@@ -2,19 +2,19 @@
   font-family: 'Oswald';
   src:
     local('Oswald'),
-    url('../fonts/Oswald.ttf') format('truetype');
+    url('../fonts/Oswald.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'OpenSans';
   src:
     local('Open Sans'),
-    url('../fonts/OpenSans.ttf') format('truetype');
+    url('../fonts/OpenSans.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'FiraCode';
   src:
     local('Fira Code'),
-    url('../fonts/FiraCode.ttf') format('truetype');
+    url('../fonts/FiraCode.woff2') format('woff2');
 }
