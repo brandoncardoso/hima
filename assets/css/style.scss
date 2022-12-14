@@ -1,5 +1,5 @@
 ---
 ---
 
-@import "hima/colourschemes/{{ site.hima.colourscheme | default: 'light' }}";
+@import "hima/colourschemes/{{ site.hima.colourscheme | default: 'auto' }}";
 @import 'hima/main';

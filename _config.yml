@@ -4,11 +4,11 @@ author:
   email: youremail@domain.com
 
 header_pages:
-  - users.md
   - about.md
+  - users.md
 
 hima:
-  colourscheme: 'auto'
+  colourscheme: auto # auto, light, dark
   social:
     - { platform: github, url: 'https://www.github.com' }
     - { platform: linkedin, url: 'https://www.linkedin.com' }

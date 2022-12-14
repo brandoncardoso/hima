@@ -1,9 +1,9 @@
 @media (prefers-color-scheme: light) {
-  @import 'hima/colourschemes/_gruvbox-light-theme';
+  @import './_gruvbox-light-theme';
 }
 
 @media (prefers-color-scheme: dark) {
-  @import 'hima/colourschemes/_gruvbox-dark-theme';
+  @import './_gruvbox-dark-theme';
 }
 
-@import 'hima/colourschemes/_base';
+@import './_base';
