@@ -3,6 +3,12 @@
 
 hima is a simple Jekyll theme with the goal of being accessible to everyone, and follows [The A11y Project's accessibility guidelines](https://www.a11yproject.com/checklist/).
 
+[Theme Preview](https://brandoncardoso.github.io/hima)
+
+![hima light preview](/preview-light.png)
+
+![hima dark preview](/preview-dark.png)
+
 ## Installation
 
 ### Remote Theme Installation (for GitHub pages)
