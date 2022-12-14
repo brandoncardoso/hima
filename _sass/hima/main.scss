@@ -87,7 +87,6 @@ a {
   position: sticky;
   top: -($header-height + $header-margin-top - $header-pinned-height);
   height: $header-height + $header-margin-top;
-  transition: 0.2s ease;
   -webkit-font-smoothing: antialiased;
 
   &__title {
