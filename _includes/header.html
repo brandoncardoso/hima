@@ -6,9 +6,9 @@
   <div class="header__container">
     <div class="header__title">
       {%- if page.layout == 'home' -%}
-      <h1><a href="/">{{ site.title }}</a></h1>
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       {%- else -%}
-      <a href="/">{{ site.title }}</a>
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
       {%- endif -%}
     </div>
 
