@@ -311,7 +311,8 @@ blockquote {
   background: $quote-background;
   margin: 0;
   padding: 1rem 2rem 1rem;
-  border-left: .3rem solid $quote-border;
+  border: .1rem solid $quote-border;
+  border-left: .3rem solid $quote-border-accent;
   border-radius: .25rem;
   font-style: italic;
 
@@ -339,6 +340,7 @@ pre {
   border-left: .3rem solid $codeblock-border-accent;
   border-radius: .25rem;
   overflow-x: auto;
+  background: $codeblock-background;
 
   code {
     padding: 0;
@@ -354,7 +356,7 @@ code {
   background: $inline-code-background;
   padding: .2rem .25rem;
   border-radius: .25rem;
-  border: .15rem solid $code-border;
+  border: .15rem solid $inline-code-border;
   overflow-x: auto;
 }
 

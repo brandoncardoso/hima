@@ -19,11 +19,13 @@ $white: #faf6e8;
   --hima-post-meta-colour: #{$white0s};
 
   --hima-quote-background: #{$black0h};
-  --hima-quote-border: #{$yellow};
+  --hima-quote-border: #{$black0};
+  --hima-quote-border-accent: #{$yellow};
 
-  --hima-codeblock-border: #{$black3};
+  --hima-codeblock-background: #{$black0h};
+  --hima-codeblock-border: #{$black0};
   --hima-codeblock-border-accent: #{$aqua};
-  --hima-code-border: #{$aqua};
+  --hima-inline-code-border: #{$aqua};
   --hima-inline-code-background: #{$black0h};
 
   --hima-table-background: #{$black1};
