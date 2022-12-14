@@ -9,3 +9,5 @@ In an effort to introduce people to contributing to open-source projects, feel f
 
 
 ## People Using Hima
+
+* [Brandon Cardoso](https://brandoncardoso.github.io)
