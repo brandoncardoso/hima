@@ -2,11 +2,13 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "hima"
-  spec.version       = "1.0.0"
+  spec.version       = "1.0.1"
   spec.authors       = ["Brandon Cardoso"]
-  spec.summary       = "A simple Jekyll theme."
+  spec.summary       = "A simple Jekyll theme with a focus on accessibility."
   spec.homepage      = "https://www.github.com/brandoncardoso/hima"
   spec.license       = "MIT"
+
+  spec.metadata["plugin_type"] = "theme"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
 
