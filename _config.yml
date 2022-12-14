@@ -15,7 +15,9 @@ hima:
     - { platform: instagram, url: 'https://www.instagram.com' }
 
 # build settings
-theme: hima
+remote_theme: brandoncardoso/hima
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-remote-theme

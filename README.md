@@ -5,6 +5,27 @@ hima is a simple Jekyll theme with the goal of being accessible to everyone, and
 
 ## Installation
 
+### Remote Theme Installation (for GitHub pages)
+
+Add the following to your `Gemfile` to install the `jekyll-remote-theme` plugin:
+
+```ruby
+gem "jekyll-remote-theme"
+```
+
+Then in your `_config.yml`, set the theme, and add the plugin
+
+```yaml
+remote_theme: brandoncardoso/hima
+
+plugins:
+  - jekyll-remote-theme
+```
+
+Finally run `bundle install` to install gems
+
+
+### Gem-based Theme Installation
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
