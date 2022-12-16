@@ -74,9 +74,14 @@ a {
   align-items: end;
   margin-bottom: 2rem;
   position: sticky;
+  -webkit-font-smoothing: antialiased;
   top: -($header-height + $header-margin-top - $header-pinned-height);
   height: $header-height + $header-margin-top;
-  -webkit-font-smoothing: antialiased;
+
+  @media (max-width: $on-mobile) {
+    top: -($header-height + ($header-margin-top/2) - $header-pinned-height);
+    height: $header-height + ($header-margin-top/2);
+  }
 
   &__title {
     display: flex;
@@ -88,6 +93,10 @@ a {
     text-transform: uppercase;
     text-align: center;
     line-height: 1.2;
+
+    @media (max-width: $on-mobile) {
+      font-size: 2rem;
+    }
 
     a {
       text-decoration: none;
@@ -239,6 +248,11 @@ a {
   justify-content: center;
   margin-top: 4rem;
   margin-bottom: 8rem;
+
+  @media (max-width: $on-mobile) {
+    margin-bottom: 4rem;
+  }
+
 
   &__author {
     display: flex;
