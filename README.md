@@ -1,5 +1,4 @@
 # hima
-[![Gem Version](https://badge.fury.io/rb/hima.svg)](https://badge.fury.io/rb/hima)
 
 hima is a simple Jekyll theme with the goal of being accessible to everyone, and follows [The A11y Project's accessibility guidelines](https://www.a11yproject.com/checklist/).
 
