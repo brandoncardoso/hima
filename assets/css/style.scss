@@ -2,4 +2,4 @@
 ---
 
 @import "hima/colourschemes/{{ site.hima.colourscheme | default: 'auto' }}";
-@import 'hima/main';
+@import 'hima/initialize';

@@ -1,17 +1,6 @@
 @charset "utf-8";
 @import './fonts';
 
-$content-padding: 2rem;
-$content-padding-mobile: 1rem;
-$content-width: 60rem;
-
-$header-margin-top: 4rem;
-$header-height: 8rem;
-$header-pinned-height: 4rem;
-
-$on-mobile: 425px;
-$on-tablet: 800px;
-
 html {
   overflow-y: scroll;
 }
