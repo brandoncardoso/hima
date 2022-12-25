@@ -7,10 +7,14 @@ layout: default
     <h1 class="post__title">{{ page.title | escape }}</h1>
     {%- assign date_format = site.hima.date_format | default: "%b. %-d, %Y" -%}
     {%- if page.author -%}
-    <span class="post__author">by {{ page.author | join: ", " }} </span>
+    <span class="post__author">
+      by {{ page.author | array_to_sentence_string }}
+    </span>
     {%- endif -%}
     {%- if page.date -%}
-    <span class="post__date">on {{ page.date | date: date_format }}</span>
+    <span class="post__date">
+      on {{ page.date | date: date_format }}
+    </span>
     {%- endif -%}
   </div>
 
