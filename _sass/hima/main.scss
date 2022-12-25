@@ -152,6 +152,12 @@ a {
 
     &__title {
       font-size: 1.67rem;
+
+      &:only-child {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       @media (max-width: $on-mobile) {
         font-size: 1.33rem;
       }

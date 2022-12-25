@@ -1,6 +1,6 @@
 {%- assign default_paths = site.pages | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
-{%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+{%- assign titles_size = site.pages | where_exp: 'page', 'page.title.size > 0' | size -%}
 
 <header class="header">
   <div class="header__container">
