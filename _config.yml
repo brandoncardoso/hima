@@ -10,6 +10,7 @@ header_pages:
 
 hima:
   colourscheme: auto # auto, light, dark
+  date_format: "%b. %-d, %Y"
   social:
     - { platform: github, url: 'https://www.github.com' }
     - { platform: linkedin, url: 'https://www.linkedin.com' }

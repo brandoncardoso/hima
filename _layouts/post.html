@@ -5,7 +5,7 @@ layout: default
 <div class="post">
   <div class="post__header">
     <h1 class="post__title">{{ page.title | escape }}</h1>
-    {%- assign date_format = site.hima.date_format | default: "%b %-d, %Y" -%}
+    {%- assign date_format = site.hima.date_format | default: "%b. %-d, %Y" -%}
     {%- if page.author -%}
     <span class="post__author">by {{ page.author | join: ", " }} </span>
     {%- endif -%}

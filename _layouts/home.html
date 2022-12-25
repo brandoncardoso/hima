@@ -11,7 +11,7 @@ layout: default
 <ol class="post-list">
   {%- for post in site.posts -%}
   <li class="post-list__post">
-    {%- assign date_format = site.hima.date_format | default: "%b %-d, %Y" -%}
+    {%- assign date_format = site.hima.date_format | default: "%b. %-d, %Y" -%}
     <span class="post-list__date">{{ post.date | date: date_format }}</span>
     <h3 class="post-list__title">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
