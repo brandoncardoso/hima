@@ -136,6 +136,10 @@ a {
     margin: 0 2rem;
   }
 
+  a.active {
+    border-bottom: .15rem solid $foreground;
+  }
+
   &--pinned {
     background: $header-pinned-background;
     box-shadow: 0 -1rem 2rem 0 $header-pinned-boxshadow;
