@@ -182,7 +182,7 @@ a {
         align-items:end;
         position: absolute;
         border: .2rem solid $nav-pinned-border;
-        border-radius: .25rem;
+        border-radius: $block-border-radius;
         right: $content-padding;
         top: .67rem;
         padding: .5rem;
@@ -202,7 +202,7 @@ a {
 
     &__nav-toggle:focus-visible + label {
       border: .15rem solid $foreground;
-      border-radius: 20%;
+      border-radius: $block-border-radius;
       box-sizing: border-box;
     }
 
@@ -345,7 +345,7 @@ blockquote {
   padding: 1rem 2rem 1rem;
   border: .1rem solid $quote-border;
   border-left: .3rem solid $quote-border-accent;
-  border-radius: .25rem;
+  border-radius: $block-border-radius;
   font-style: italic;
 
   p {
@@ -374,7 +374,7 @@ pre {
   margin: 0;
   border: .1rem solid $codeblock-border;
   border-left: .3rem solid $codeblock-border-accent;
-  border-radius: .25rem;
+  border-radius: $block-border-radius;
   overflow-x: auto;
   background: $codeblock-background;
 
@@ -391,7 +391,7 @@ code {
 :not(pre) > code {
   background: $inline-code-background;
   padding: .2rem .25rem;
-  border-radius: .25rem;
+  border-radius: $block-border-radius;
   border: .15rem solid $inline-code-border;
   overflow-x: auto;
 }
@@ -400,6 +400,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   background: $table-background;
+  border-radius: $block-border-radius;
 
   @media (max-width: $on-tablet) {
     display: block;
