@@ -120,7 +120,11 @@ a {
     display: none;
     margin-top: 0;
     height: 24px;
-    fill: $nav-menu-icon-fill;
+    width: 24px;
+    color: $nav-menu-icon-fill;
+    font-size: 1.33rem;
+    cursor: pointer;
+    user-select: none;
   }
 
   &__links {
@@ -189,6 +193,19 @@ a {
       }
     }
 
+    &__nav-toggle {
+      display: block;
+      opacity: 0;
+      height: 0;
+      margin: 0;
+    }
+
+    &__nav-toggle:focus-visible + label {
+      border: .15rem solid $foreground;
+      border-radius: 20%;
+      box-sizing: border-box;
+    }
+
     &__link {
       margin: 0;
       margin-left: 3rem;
@@ -202,7 +219,9 @@ a {
 
     &__nav label[for="nav-toggle"] {
       @media (max-width: $on-tablet) {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
 

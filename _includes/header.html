@@ -14,9 +14,18 @@
 
     {%- if titles_size > 0 -%}
     <nav class="header__nav">
-      <input class="header__nav-toggle" id="nav-toggle" type="checkbox" />
+      <input
+        class="header__nav-toggle"
+        id="nav-toggle"
+        type="checkbox"
+        aria-checked="false"
+        tabindex="0"
+        onclick="updateCheckedAria(event)"
+        onkeydown="updateCheckedAria(event)"
+      />
       <label for="nav-toggle" aria-label="show/hide the navigation menu">
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+        <!-- unicode trigram -->
+        &#9776;
       </label>
 
       <ul class="header__links">
@@ -54,4 +63,14 @@
       header.classList.remove('header--pinned')
     }
   })
+
+  function updateCheckedAria(event) {
+    const spacebarKeyCode = 32
+    const checkbox = event.target
+
+    if (event.keyCode && event.keyCode !== spacebarKeyCode) {
+      return
+    }
+    checkbox.setAttribute('aria-checked', checkbox.checked)
+  }
 </script>
