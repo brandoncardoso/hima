@@ -364,6 +364,10 @@ pre {
   &.highlight {
     border: none;
   }
+
+  .highlight > & {
+    margin: 0;
+  }
 }
 
 .highlight {
