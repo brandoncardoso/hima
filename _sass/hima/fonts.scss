@@ -4,6 +4,7 @@
   src:
     local('Oswald'),
     url('../fonts/Oswald.woff2') format('woff2');
+  font-display: fallback;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
   src:
     local('Open Sans'),
     url('../fonts/OpenSans.woff2') format('woff2');
+  font-display: fallback;
 }
 
 @font-face {
@@ -20,4 +22,5 @@
   src:
     local('Fira Code'),
     url('../fonts/FiraCode.woff2') format('woff2');
+  font-display: fallback;
 }
