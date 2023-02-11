@@ -41,7 +41,7 @@ a {
   border-bottom: .15rem solid $link-colour;
 
   &:hover {
-    font-weight: bold;
+    border-bottom: none;
   }
 
   .header & {
@@ -138,6 +138,10 @@ a {
 
   &__link {
     margin: 0 2rem;
+
+    & a:hover {
+      border-bottom: .15rem solid $foreground;
+    }
   }
 
   a.active {
