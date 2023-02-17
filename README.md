@@ -66,6 +66,10 @@ Refers to files within the `_layouts` directory, that define the markup for your
 
 `home.html` is a flexible HTML layout for the site's landing-page / home-page / index-page. It will inject the content before the **Posts** heading. The posts list will only appear if you have at least one valid post, or draft with `show_drafts` enabled on your site.
 
+##### Variables
+* `post_list_title` (string) - overrides the post list title.
+* `post_list_limit` (int) - limits the number of posts on the home page
+
 ### Includes
 
   - `head.html` &mdash; Code-block that defines the `<head></head>` in *default* layout.

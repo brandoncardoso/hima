@@ -6,10 +6,16 @@ layout: default
 </div>
 
 {%- if site.posts.size > 0 -%}
-<h2 id="post-list-title" class="post-list-title">Posts</h2>
+<h2 id="post-list-title" class="post-list-title">
+  {% if page.post_list_title %}
+    {{ page.post_list_title }}
+  {% else %}
+    Posts
+  {% endif %}
+</h2>
 <section aria-labelledby="post-list-title">
 <ol class="post-list">
-  {%- for post in site.posts -%}
+  {%- for post in site.posts limit: page.post_list_limit -%}
   <li class="post-list__post">
     <h3 class="post-list__title">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -20,6 +26,6 @@ layout: default
     <div class="post-list__excerpt">{{ post.excerpt }}</div>
   </li>
   {%- endfor -%}
-</ul>
+</ol>
 </section>
 {%- endif -%}
