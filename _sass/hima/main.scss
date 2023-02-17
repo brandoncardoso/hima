@@ -286,7 +286,6 @@ a {
     margin-bottom: 4rem;
   }
 
-
   &__author {
     display: flex;
     align-items: center;
@@ -306,42 +305,16 @@ a {
   list-style-type: none;
   padding-left: 0;
 
-  &__post {
-    & + .post-list__post {
-      margin-top: 3rem;
-    }
+  &__post + &__post {
+    margin-top: 3rem;
   }
 
   &__title {
     margin: 0;
   }
 
-  &__tags,
-  &__date {
-    color: $post-meta-colour;
-    font-size: .67rem;
-  }
-
-  &__date + &__tags {
-    &::before {
-      content: "\2014";
-    }
-  }
-
-  &__tag {
-    a {
-      border-bottom-width: 0.1rem;
-    }
-
-    &:not(:last-child)::after {
-      content: ",";
-    }
-  }
-
-  &__excerpt {
-    p {
-      margin: 0;
-    }
+  &__excerpt p {
+    margin: 0;
   }
 }
 
@@ -355,10 +328,25 @@ a {
     line-height: 1.2;
   }
 
-  &__date,
-  &__author {
+  &__meta {
+    font-size: .67rem;
     color: $post-meta-colour;
   }
+
+  &__date + .post__tags::before {
+    content: "\2014";
+  }
+
+  &__tag {
+    a {
+      border-bottom-width: 0.1rem;
+    }
+
+    &:not(:last-child)::after {
+      content: ",";
+    }
+  }
+
 }
 
 blockquote {

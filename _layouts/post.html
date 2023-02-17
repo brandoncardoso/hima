@@ -1,21 +1,13 @@
 ---
 layout: default
 ---
+{%- assign date_format = site.hima.date_format | default: "%b. %-d, %Y" -%}
 
 <div class="post">
   <div class="post__header">
     <h1 class="post__title">{{ page.title | escape }}</h1>
-    {%- assign date_format = site.hima.date_format | default: "%b. %-d, %Y" -%}
-    {%- if page.author -%}
-    <span class="post__author">
-      by {{ page.author | array_to_sentence_string }}
-    </span>
-    {%- endif -%}
-    {%- if page.date -%}
-    <span class="post__date">
-      on {{ page.date | date: date_format }}
-    </span>
-    {%- endif -%}
+
+    {% include post-meta.html post=page %}
   </div>
 
   <div class="post__content">

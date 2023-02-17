@@ -1,0 +1,19 @@
+<span class="post__meta">
+  {%- if include.post.author -%}
+  <div class="post__author">
+    by {{ include.post.author | array_to_sentence_string }}
+  </div>
+  {%- endif -%}
+
+  {%- assign date_format = site.hima.date_format | default: "%b. %-d, %Y" -%}
+  <span class="post__date">{{ include.post.date | date: date_format }}</span>
+
+  {% if include.post.tags and include.post.tags.size > 0 %}
+  <span class="post__tags">
+    {% for tag in include.post.tags %}
+    <span class="post__tag">{{ tag }}</span>
+    {% endfor %}
+  </span>
+  {% endif %}
+</span>
+
