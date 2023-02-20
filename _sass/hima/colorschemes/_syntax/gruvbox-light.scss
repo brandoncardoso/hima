@@ -1,3 +1,5 @@
+$green-dark: darken(#79740e, 7%);
+
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
@@ -26,7 +28,7 @@
   color: #282828;
 }
 .highlight .gi {
-  color: #79740e;
+  color: $green-dark;
   background-color: #fbf1c7;
 }
 .highlight .gd {
@@ -34,7 +36,7 @@
   background-color: #fbf1c7;
 }
 .highlight .gh {
-  color: #79740e;
+  color: $green-dark;
   font-weight: bold;
 }
 .highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
@@ -50,15 +52,15 @@
   color: #af3a03;
 }
 .highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #79740e;
+  color: $green-dark;
   font-style: italic;
 }
 .highlight .si {
-  color: #79740e;
+  color: $green-dark;
   font-style: italic;
 }
 .highlight .sr {
-  color: #79740e;
+  color: $green-dark;
   font-style: italic;
 }
 .highlight .sa {
@@ -77,7 +79,7 @@
   color: #8f3f71;
 }
 .highlight .na {
-  color: #79740e;
+  color: $green-dark;
 }
 .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
   color: #8f3f71;
