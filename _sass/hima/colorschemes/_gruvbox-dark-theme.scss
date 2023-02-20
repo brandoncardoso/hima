@@ -36,4 +36,6 @@ $white: #faf6e8;
   --hima-tag-foreground: #{$aqua-light};
   --hima-tag-background: #{$black0h};
   --hima-tag-background-hover: #{darken($black0h, 5%)};
+  --hima-tag-prefix-color: #{$white2};
+  --hima-tag-suffix-color: #{$white0h};
 }

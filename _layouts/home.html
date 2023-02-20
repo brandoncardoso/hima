@@ -27,7 +27,9 @@ layout: default
     {% if post.categories and post.categories.size > 0 %}
     <span class="post-list__categories">
       in
-      {% include post-categories.html categories=post.categories %}
+      {% for category in post.categories %}
+      {% include tags/post-category.html category=category %}
+      {% endfor %}
     </span>
     {% endif %}
 

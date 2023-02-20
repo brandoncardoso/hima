@@ -374,6 +374,14 @@ a {
   margin: 0;
   color: $tag-foreground;
 
+  &__prefix {
+    color: $tag-prefix-color;
+  }
+
+  &__suffix {
+    color: $tag-suffix-color;
+  }
+
   &--button {
     a {
       color: $tag-foreground;

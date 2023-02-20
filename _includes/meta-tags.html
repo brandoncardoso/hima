@@ -1,8 +1,0 @@
-{% for tag in include.meta %}
-<span class="{{ include.class }} tag tag--button">
-  {% assign tag_slug = tag | slugify %}
-  <a href="{{ site.baseurl | append: include.path | append: tag_slug }}">
-    {{ include.prefix }}{{ tag }}
-  </a>
-</span>
-{% endfor %}

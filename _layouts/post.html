@@ -11,7 +11,9 @@ layout: default
     {% if page.categories and page.categories.size > 0 %}
     <div class="post__categories">
       in
-      {% include post-categories.html categories=page.categories %}
+      {% for category in page.categories %}
+      {% include tags/post-category.html category=category %}
+      {% endfor %}
     </div>
     {% endif %}
 
@@ -23,7 +25,9 @@ layout: default
 
   {% if page.tags and page.tags.size > 0 %}
   <div class="post__tags">
-    {% include post-tags.html tags=page.tags %}
+    {% for tag in page.tags %}
+    {% include tags/post-tag.html tag=tag %}
+    {% endfor %}
   </div>
   {% endif %}
 </div>

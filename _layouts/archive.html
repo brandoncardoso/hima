@@ -4,13 +4,19 @@ layout: default
 
 {% if page.type == "category" %}
 <h1>
-  All posts in <span class="tag">{{ page.title }}</span>
+  All posts in
+  <span class="tag">
+    <span class="tag__text">{{ page.title }}</span>
+  </span>
 </h1>
 {% else if page.type == "tag" %}
 <h1>
-  All posts tagged as <span class="tag">#{{ page.title }}</span>
+  All posts tagged as
+  <span class="tag">
+    <span class="tag__prefix">#</span>
+    <span class="tag__text">{{ page.title }}</span>
+  </span>
 </h1>
-
 {% endif %}
 
 <ul class="archive__list">
