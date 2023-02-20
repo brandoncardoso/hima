@@ -1,5 +1,5 @@
 @import './_syntax/gruvbox-light';
-@import './_gruvbox-colours';
+@import './_gruvbox-colors';
 
 $white: #faf6e8;
 
@@ -7,7 +7,7 @@ $white: #faf6e8;
   --hima-foreground: #{$black0h};
   --hima-background: #{$white0h};
 
-  --hima-link-colour: #{$blue-dark};
+  --hima-link-color: #{$blue-dark};
 
   --hima-header-pinned-background: #{$white};
   --hima-header-pinned-boxshadow: #{$gray};
@@ -16,7 +16,7 @@ $white: #faf6e8;
   --hima-nav-menu-icon-fill: #{$black0h};
   --hima-social-icon-fill: #{$black0h};
 
-  --hima-post-meta-colour: #{$black2};
+  --hima-post-meta-color: #{$black2};
 
   --hima-quote-background: #{$white};
   --hima-quote-border: #{$white0h};

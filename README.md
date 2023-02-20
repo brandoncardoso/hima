@@ -1,6 +1,6 @@
 # hima
 
-hima is a simple Jekyll theme with the goal of being accessible to everyone, and follows [The A11y Project's accessibility guidelines](https://www.a11yproject.com/checklist/).
+hima is a simple Jekyll theme with the goal of being accessible to everyone, and follows [The A11Y Project's accessibility guidelines](https://www.a11yproject.com/checklist/).
 
 [Theme Preview](https://brandoncardoso.github.io/hima)
 
@@ -84,14 +84,14 @@ Refers to files within the `_layouts` directory, that define the markup for your
 
 Refers to `.scss` files within the `_sass` directory that define the theme's styles.
 
-  - `hima/colourschemes/auto.scss` &mdash; An adaptive colourscheme that switches between light and dark mode depending on your site visitors' preference. *Used by default.*
+  - `hima/colorschemes/auto.scss` &mdash; An adaptive colorscheme that switches between light and dark mode depending on your site visitors' preference. *Used by default.*
   - `hima/initialize.scss` &mdash; A component that defines the theme's *skin-agnostic* variable defaults and sass partials.
     It imports the following components (in the following order):
     - `hima/custom-variables.scss` &mdash; A hook that allows overriding variable defaults and mixins. (*Note: Cannot override styles*)
     - `hima/main.scss` &mdash; Style rules for the theme.
     - `hima/custom-styles.scss` &mdash; A hook that allows overriding styles defined above. (*Note: Cannot override variables*)
 
-Refer to the [Colour Schemes](#colour-schemes) section for more details.
+Refer to the [Color Schemes](#color-schemes) section for more details.
 
 ### Assets
 
@@ -121,24 +121,24 @@ e.g., to override the [`_includes/head.html `](_includes/head.html) file to spec
 
 You can override any Sass variables and mixins by redefining them in `_sass/hima/custom-variables.scss`. Custom CSS rules can be added in `_sass/hima/custom-styles.scss`.
 
-### Colour Schemes
+### Color Schemes
 
-To switch to another colour scheme, simply declare it in your site's `_config.yml` file. For example, to use the dark colour scheme, you would add the following:
+To switch to another color scheme, simply declare it in your site's `_config.yml` file. For example, to use the dark color scheme, you would add the following:
 
 ```yaml
 hima:
-  colourscheme: dark
+  colorscheme: dark
 ```
 
-#### Available Colour Schemes
+#### Available color Schemes
 
 Name            | Description
 --------------- | -----------
-auto            | *Adaptive colour scheme* using the light and dark colour schemes.
-dark            | Dark colour scheme based on gruvbox.
-light           | Light colour scheme based on gruvbox.
+auto            | *Adaptive color scheme* using the light and dark color schemes.
+dark            | Dark color scheme based on gruvbox.
+light           | Light color scheme based on gruvbox.
 
-*:bulb: Adaptive colourscheme switchs between the "light" and "dark" variants based on the user's operating system  or browser setting via CSS Media Query [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).*
+*:bulb: Adaptive colorscheme switches between the "light" and "dark" variants based on the user's operating system  or browser setting via CSS Media Query [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).*
 
 ### Navigation Links
 

@@ -36,9 +36,9 @@ h3 {
 }
 
 a {
-  color: $link-colour;
+  color: $link-color;
   text-decoration: none;
-  border-bottom: .15rem solid $link-colour;
+  border-bottom: .15rem solid $link-color;
 
   &:hover {
     border-bottom: none;
@@ -315,7 +315,7 @@ a {
 
   &__date {
     font-size: .67rem;
-    color: $post-meta-colour;
+    color: $post-meta-color;
   }
 
   &__excerpt {
@@ -344,7 +344,7 @@ a {
 
   &__date,
   &__categories {
-    color: $post-meta-colour;
+    color: $post-meta-color;
   }
 
   &__category {
