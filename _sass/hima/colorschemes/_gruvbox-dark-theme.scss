@@ -32,4 +32,8 @@ $white: #faf6e8;
   --hima-table-header-background: #{$black0h};
   --hima-table-header-bottom-border: #{$black0};
   --hima-table-row-border: #{$black0};
+
+  --hima-tag-foreground: #{$aqua-light};
+  --hima-tag-background: #{$black0h};
+  --hima-tag-background-hover: #{darken($black0h, 5%)};
 }

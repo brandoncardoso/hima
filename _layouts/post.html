@@ -4,11 +4,26 @@ layout: default
 <div class="post">
   <div class="post__header">
     <h1 class="post__title">{{ page.title | escape }}</h1>
+
     {%- assign date_format = site.hima.date_format | default: "%b. %-d, %Y" -%}
     <span class="post__date">{{ page.date | date: date_format }}</span>
+
+    {% if page.categories and page.categories.size > 0 %}
+    <div class="post__categories">
+      in
+      {% include post-categories.html categories=page.categories %}
+    </div>
+    {% endif %}
+
   </div>
 
   <div class="post__content">
-  {{ content }}
+    {{ content }}
   </div>
+
+  {% if page.tags and page.tags.size > 0 %}
+  <div class="post__tags">
+    {% include post-tags.html tags=page.tags %}
+  </div>
+  {% endif %}
 </div>

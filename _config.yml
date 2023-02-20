@@ -16,6 +16,12 @@ hima:
     - { platform: linkedin, url: 'https://www.linkedin.com' }
     - { platform: instagram, url: 'https://www.instagram.com' }
 
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archive
+
 # build settings
 remote_theme: brandoncardoso/hima
 

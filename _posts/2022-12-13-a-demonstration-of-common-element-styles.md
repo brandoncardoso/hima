@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "A Demonstration of Common Element Styles"
-categories: example
 author:
 - Smitty Werbenjägermanjensen
 - Terry Pratchett
-tags: [long, example, common element styles]
+categories: [examples, styles]
+tags: [long, css]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est ullamcorper eget nulla facilisi etiam dignissim diam. Augue eget arcu dictum varius duis at consectetur lorem donec. Convallis posuere morbi leo urna molestie at elementum eu. Tempor commodo ullamcorper a lacus vestibulum sed arcu.

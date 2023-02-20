@@ -313,9 +313,12 @@ a {
     margin: 0;
   }
 
-  &__date {
-    font-size: .67rem;
+  &__date,
+  &__categories {
     color: $post-meta-color;
+    display: inline-block;
+    margin-top: .5rem;
+    font-size: .67rem;
   }
 
   &__excerpt {
@@ -337,23 +340,52 @@ a {
     line-height: 1.2;
   }
 
-  &__date,
-  &__categories {
-    font-size: .67rem;
-  }
-
-  &__date,
-  &__categories {
+  &__date {
     color: $post-meta-color;
   }
 
-  &__category {
-    &:not(:last-child)::after {
-      content: ",";
-    }
+  &__categories {
+    color: $post-meta-color;
+    margin-top: 0;
+    display: inline-block;
   }
 
+  &__tags {
+    font-size: .67rem;
+    margin-top: 4rem;
+    text-align: center;
+  }
 }
+
+.archive {
+  &__date {
+    font-size: .67rem;
+    font-family: FiraCode, monospace;
+    color: $post-meta-color;
+    margin-right: .5rem;
+  }
+}
+
+.tag {
+  background: $tag-background;
+  padding: .1rem .5rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0;
+  color: $tag-foreground;
+
+  &--button {
+    a {
+      color: $tag-foreground;
+      border: none;
+    }
+    
+    &:hover {
+      background: $tag-background-hover;
+    }
+  }
+}
+
 
 blockquote {
   background: $quote-background;

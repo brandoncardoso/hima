@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% if page.type == "category" %}
+<h1>
+  All posts in <span class="tag">{{ page.title }}</span>
+</h1>
+{% else if page.type == "tag" %}
+<h1>
+  All posts tagged as <span class="tag">#{{ page.title }}</span>
+</h1>
+
+{% endif %}
+
+<ul class="archive__list">
+  {% for post in page.posts %}
+  <li>
+    <span class="archive__date">{{ post.date | date: site.hima.date_format }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

@@ -61,6 +61,7 @@ Refers to files within the `_layouts` directory, that define the markup for your
   - `home.html` &mdash; The layout for your landing-page / home-page / index-page. [[More Info.](#home-layout)]
   - `page.html` &mdash; The layout for your documents that contain FrontMatter, but are not posts.
   - `post.html` &mdash; The layout for your posts.
+  - `archive.html` &mdash; The layout for the category/tag archive page.
 
 #### Home Layout
 
@@ -104,7 +105,7 @@ Refer to the [Social Networks](#social-networks) section for more details.
 
 ### Plugins
 
-Hima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) for how to set it up.
+Hima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin pre-installed to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) for how to set it up.
 
 ## Usage
 
