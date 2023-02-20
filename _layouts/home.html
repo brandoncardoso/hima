@@ -21,9 +21,12 @@ layout: default
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </h3>
 
-    {% include post-meta.html post=post %}
+    {%- assign date_format = site.hima.date_format | default: "%b. %-d, %Y" -%}
+    <span class="post-list__date">{{ post.date | date: date_format }}</span>
 
-    <div class="post-list__excerpt">{{ post.excerpt }}</div>
+    <div class="post-list__excerpt">
+      {{ post.excerpt }}
+    </div>
   </li>
   {%- endfor -%}
 </ol>

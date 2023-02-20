@@ -313,8 +313,17 @@ a {
     margin: 0;
   }
 
-  &__excerpt p {
-    margin: 0;
+  &__date {
+    font-size: .67rem;
+    color: $post-meta-colour;
+  }
+
+  &__excerpt {
+    margin-top: 0.5rem;
+
+    p {
+      margin: 0;
+    }
   }
 }
 
@@ -328,20 +337,17 @@ a {
     line-height: 1.2;
   }
 
-  &__meta {
+  &__date,
+  &__categories {
     font-size: .67rem;
+  }
+
+  &__date,
+  &__categories {
     color: $post-meta-colour;
   }
 
-  &__date + .post__tags::before {
-    content: "\2014";
-  }
-
-  &__tag {
-    a {
-      border-bottom-width: 0.1rem;
-    }
-
+  &__category {
     &:not(:last-child)::after {
       content: ",";
     }

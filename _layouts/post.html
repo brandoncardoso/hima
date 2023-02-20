@@ -1,13 +1,11 @@
 ---
 layout: default
 ---
-{%- assign date_format = site.hima.date_format | default: "%b. %-d, %Y" -%}
-
 <div class="post">
   <div class="post__header">
     <h1 class="post__title">{{ page.title | escape }}</h1>
-
-    {% include post-meta.html post=page %}
+    {%- assign date_format = site.hima.date_format | default: "%b. %-d, %Y" -%}
+    <span class="post__date">{{ page.date | date: date_format }}</span>
   </div>
 
   <div class="post__content">
