@@ -79,8 +79,8 @@ a {
   height: $header-height + $header-margin-top;
 
   @media (max-width: $on-mobile) {
-    top: -($header-height + ($header-margin-top/2) - $header-pinned-height);
-    height: $header-height + ($header-margin-top/2);
+    top: -($header-height + calc($header-margin-top / 2) - $header-pinned-height);
+    height: $header-height + calc($header-margin-top / 2);
   }
 
   &__title {
