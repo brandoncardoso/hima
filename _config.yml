@@ -22,6 +22,9 @@ jekyll-archives:
     - categories
     - tags
   layout: archive
+  permalinks:
+    category: '/category/:name'
+    tag: '/tag/:name'
 
 # build settings
 remote_theme: brandoncardoso/hima
