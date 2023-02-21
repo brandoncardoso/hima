@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "hima"
-  spec.version       = "2.0.0"
+  spec.version       = "2.0.1"
   spec.authors       = ["Brandon Cardoso"]
   spec.summary       = "A simple Jekyll theme with a focus on accessibility."
   spec.homepage      = "https://www.github.com/brandoncardoso/hima"
