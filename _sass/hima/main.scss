@@ -399,8 +399,7 @@ blockquote {
   background: $quote-background;
   margin: 0;
   padding: 1rem 2rem 1rem;
-  border: .1rem solid $quote-border;
-  border-left: .3rem solid $quote-border-accent;
+  border-left: .3rem solid $quote-accent;
   border-radius: $block-border-radius;
   font-style: italic;
 
@@ -428,8 +427,7 @@ pre {
 
 .highlight {
   margin: 0;
-  border: .1rem solid $codeblock-border;
-  border-left: .3rem solid $codeblock-border-accent;
+  border-left: .3rem solid $codeblock-accent;
   border-radius: $block-border-radius;
   overflow-x: auto;
   background: $codeblock-background;
