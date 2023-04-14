@@ -318,7 +318,7 @@ a {
     color: $post-meta-color;
     display: inline-block;
     margin-top: .5rem;
-    font-size: .67rem;
+    font-size: .8rem;
   }
 
   &__excerpt {
@@ -351,7 +351,7 @@ a {
   }
 
   &__tags {
-    font-size: .67rem;
+    font-size: .8rem;
     margin-top: 4rem;
     text-align: center;
   }
@@ -359,7 +359,7 @@ a {
 
 .archive {
   &__date {
-    font-size: .67rem;
+    font-size: .8rem;
     font-family: FiraCode, monospace;
     color: $post-meta-color;
     margin-right: .5rem;
