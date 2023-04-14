@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Hima Jekyll Theme | A simple Jekyll theme with a focus on accessibility.</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Hima Jekyll Theme" />
+<meta name="author" content="Your name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A simple Jekyll theme with a focus on accessibility." />
+<meta property="og:description" content="A simple Jekyll theme with a focus on accessibility." />
+<meta property="og:site_name" content="Hima Jekyll Theme" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Hima Jekyll Theme" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Your name"},"description":"A simple Jekyll theme with a focus on accessibility.","headline":"Hima Jekyll Theme","name":"Hima Jekyll Theme","url":"/hima/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" type="image/x-icon" href="/hima/favicon.ico">
+  <link rel="preload" as="font" href="/hima/assets/fonts/Oswald.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="/hima/assets/fonts/OpenSans.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hima/assets/css/style.css">
+</head>
+<body><header class="header">
+  <div class="header__container">
+    <div class="header__title"><h1><a href="/hima/">Hima Jekyll Theme</a></h1></div><nav class="header__nav">
+      <input
+        class="header__nav-toggle"
+        id="nav-toggle"
+        type="checkbox"
+        aria-checked="false"
+        tabindex="0"
+        onclick="updateCheckedAria(event)"
+        onkeydown="updateCheckedAria(event)"
+      />
+      <label for="nav-toggle" aria-label="show/hide the navigation menu">
+        <!-- unicode trigram -->
+        &#9776;
+      </label>
+
+      <ul class="header__links"><li class="header__link">
+          <a
+            href="/hima/about.html"
+            aria-label="About"
+            
+            >
+            About
+          </a>
+        </li><li class="header__link">
+          <a
+            href="/hima/archive.html"
+            aria-label="Archive"
+            
+            >
+            Archive
+          </a>
+        </li><li class="header__link">
+          <a
+            href="/hima/users.html"
+            aria-label="Users"
+            
+            >
+            Users
+          </a>
+        </li></ul>
+    </nav></div>
+</header>
+
+<script>
+  const header = document.querySelector('.header')
+  const container = header.querySelector('.header__container')
+  const trigger = header.offsetHeight - container.offsetTop
+
+  window.addEventListener("scroll", (event) => {
+    if (window.scrollY > trigger) {
+      header.classList.add('header--pinned')
+    } else {
+      header.classList.remove('header--pinned')
+    }
+  })
+
+  function updateCheckedAria(event) {
+    const spacebarKeyCode = 32
+    const checkbox = event.target
+
+    if (event.keyCode && event.keyCode !== spacebarKeyCode) {
+      return
+    }
+    checkbox.setAttribute('aria-checked', checkbox.checked)
+  }
+</script>
+<main class="content">
+      <div class="content__container">
+        <div class="home__content">
+<p>This is Hima, a simple Jekyll theme with the goal of being accessible to everyone. It follows <a href="https://www.a11yproject.com/checklist">The A11Y Project’s accessibility guidelines</a>. It comes with a light and dark colour scheme, as well as an adaptive colour scheme that switches between light and dark depending on your OS/browser settings.</p>
+
+<p>For how to install and other information, check out the <a href="https://github.com/brandoncardoso/hima">Hima repository on GitHub</a>.</p>
+
+</div><h2 id="post-list-title" class="post-list-title">
+  
+    Recent Posts
+  
+</h2>
+<section aria-labelledby="post-list-title">
+<ol class="post-list"><li class="post-list__post">
+    <h3 class="post-list__title">
+      <a href="/hima/2022/12/14/welcome-to-jekyll.html">Welcome To Jekyll</a>
+    </h3><span class="post-list__date">Dec. 14, 2022</span>
+    
+    
+
+    <div class="post-list__excerpt">
+      <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+
+    </div>
+  </li><li class="post-list__post">
+    <h3 class="post-list__title">
+      <a href="/hima/examples/styles/2022/12/13/a-demonstration-of-common-element-styles.html">A Demonstration of Common Element Styles</a>
+    </h3><span class="post-list__date">Dec. 13, 2022</span>
+    
+    
+    <span class="post-list__categories">
+      in
+      
+      <span class=" tag tag--button">
+  
+  <a href="/hima/category/examples">
+    <span class="tag__prefix"></span>
+    <span class="tag__text">examples</span>
+    <span class="tag__suffix"></span>
+  </a>
+</span>
+
+
+      
+      <span class=" tag tag--button">
+  
+  <a href="/hima/category/styles">
+    <span class="tag__prefix"></span>
+    <span class="tag__text">styles</span>
+    <span class="tag__suffix"></span>
+  </a>
+</span>
+
+
+      
+    </span>
+    
+
+    <div class="post-list__excerpt">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est ullamcorper eget nulla facilisi etiam dignissim diam. Augue eget arcu dictum varius duis at consectetur lorem donec. Convallis posuere morbi leo urna molestie at elementum eu. Tempor commodo ullamcorper a lacus vestibulum sed arcu.</p>
+
+
+    </div>
+  </li><li class="post-list__post">
+    <h3 class="post-list__title">
+      <a href="/hima/examples/2022/12/12/super-long-article.html">Some articles are just so long they deserve a really long title to see if things will break well. A really crazy long title, so there's no way it won't wrap on any screen size or zoom level</a>
+    </h3><span class="post-list__date">Dec. 12, 2022</span>
+    
+    
+    <span class="post-list__categories">
+      in
+      
+      <span class=" tag tag--button">
+  
+  <a href="/hima/category/examples">
+    <span class="tag__prefix"></span>
+    <span class="tag__text">examples</span>
+    <span class="tag__suffix"></span>
+  </a>
+</span>
+
+
+      
+    </span>
+    
+
+    <div class="post-list__excerpt">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
+
+
+    </div>
+  </li><li class="post-list__post">
+    <h3 class="post-list__title">
+      <a href="/hima/2022/12/11/simple-post.html">A simple post</a>
+    </h3><span class="post-list__date">Dec. 11, 2022</span>
+    
+    
+
+    <div class="post-list__excerpt">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius ultricies commodo. Aenean mollis imperdiet tortor a iaculis. Sed rutrum ac sapien et mattis. Sed commodo efficitur sem. Proin pretium leo urna, ac ornare lectus rhoncus quis. Nullam consequat turpis purus, sed sollicitudin elit iaculis nec. Pellentesque non vehicula diam. Nulla vulputate eros nec molestie semper. Donec sollicitudin lacus euismod, scelerisque arcu eu, pharetra risus. Praesent hendrerit, orci a semper hendrerit, magna ligula consectetur odio, rhoncus volutpat risus velit at odio. Etiam eget mollis justo, in scelerisque augue. Aliquam eu turpis dignissim, feugiat nisl sit amet, accumsan nulla. Nunc ultricies, mi vitae gravida consequat, nulla quam suscipit risus, vel venenatis tortor libero eu est.</p>
+
+
+    </div>
+  </li></ol>
+</section>
+      </div>
+    </main><footer class="footer">
+  <div class="footer__container"><ul class="social-list">
+  <li class="social-list__link">
+    <a rel="me" href="/hima/feed.xml" aria-label="rss feed">
+      <svg aria-hidden="true">
+        <use xlink:href="/hima/assets/hima-social-icons.svg#rss"></use>
+      </svg>
+    </a>
+  </li><li class="social-list__link">
+    <a rel="me" href="https://www.github.com" aria-label="github">
+      <svg aria-hidden="true">
+        <use xlink:href="/hima/assets/hima-social-icons.svg#github"></use>
+      </svg>
+    </a>
+  </li><li class="social-list__link">
+    <a rel="me" href="https://www.linkedin.com" aria-label="linkedin">
+      <svg aria-hidden="true">
+        <use xlink:href="/hima/assets/hima-social-icons.svg#linkedin"></use>
+      </svg>
+    </a>
+  </li><li class="social-list__link">
+    <a rel="me" href="https://www.instagram.com" aria-label="instagram">
+      <svg aria-hidden="true">
+        <use xlink:href="/hima/assets/hima-social-icons.svg#instagram"></use>
+      </svg>
+    </a>
+  </li></ul>
+<div class="footer__author">
+      <div class="footer__name">
+        Your name
+      </div>
+      <div class="footer__email">
+        <a href="mailto:youremail@domain.com">
+          youremail@domain.com
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Welcome To Jekyll | Hima Jekyll Theme</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Welcome To Jekyll" />
+<meta name="author" content="Your name" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated." />
+<meta property="og:description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated." />
+<meta property="og:site_name" content="Hima Jekyll Theme" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-14T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Welcome To Jekyll" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Your name"},"dateModified":"2022-12-14T00:00:00+00:00","datePublished":"2022-12-14T00:00:00+00:00","description":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.","headline":"Welcome To Jekyll","mainEntityOfPage":{"@type":"WebPage","@id":"/hima/2022/12/14/welcome-to-jekyll.html"},"url":"/hima/2022/12/14/welcome-to-jekyll.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" type="image/x-icon" href="/hima/favicon.ico">
+  <link rel="preload" as="font" href="/hima/assets/fonts/Oswald.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="/hima/assets/fonts/OpenSans.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hima/assets/css/style.css">
+</head>
+<body><header class="header">
+  <div class="header__container">
+    <div class="header__title"><a href="/hima/">Hima Jekyll Theme</a></div><nav class="header__nav">
+      <input
+        class="header__nav-toggle"
+        id="nav-toggle"
+        type="checkbox"
+        aria-checked="false"
+        tabindex="0"
+        onclick="updateCheckedAria(event)"
+        onkeydown="updateCheckedAria(event)"
+      />
+      <label for="nav-toggle" aria-label="show/hide the navigation menu">
+        <!-- unicode trigram -->
+        &#9776;
+      </label>
+
+      <ul class="header__links"><li class="header__link">
+          <a
+            href="/hima/about.html"
+            aria-label="About"
+            
+            >
+            About
+          </a>
+        </li><li class="header__link">
+          <a
+            href="/hima/archive.html"
+            aria-label="Archive"
+            
+            >
+            Archive
+          </a>
+        </li><li class="header__link">
+          <a
+            href="/hima/users.html"
+            aria-label="Users"
+            
+            >
+            Users
+          </a>
+        </li></ul>
+    </nav></div>
+</header>
+
+<script>
+  const header = document.querySelector('.header')
+  const container = header.querySelector('.header__container')
+  const trigger = header.offsetHeight - container.offsetTop
+
+  window.addEventListener("scroll", (event) => {
+    if (window.scrollY > trigger) {
+      header.classList.add('header--pinned')
+    } else {
+      header.classList.remove('header--pinned')
+    }
+  })
+
+  function updateCheckedAria(event) {
+    const spacebarKeyCode = 32
+    const checkbox = event.target
+
+    if (event.keyCode && event.keyCode !== spacebarKeyCode) {
+      return
+    }
+    checkbox.setAttribute('aria-checked', checkbox.checked)
+  }
+</script>
+<main class="content">
+      <div class="content__container">
+        <div class="post">
+  <div class="post__header">
+    <h1 class="post__title">Welcome To Jekyll</h1><span class="post__date">Dec. 14, 2022</span>
+
+    
+
+  </div>
+
+  <div class="post__content">
+    <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code class="language-plaintext highlighter-rouge">_posts</code> directory that follows the convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+
+  </div>
+
+  
+</div>
+
+      </div>
+    </main><footer class="footer">
+  <div class="footer__container"><ul class="social-list">
+  <li class="social-list__link">
+    <a rel="me" href="/hima/feed.xml" aria-label="rss feed">
+      <svg aria-hidden="true">
+        <use xlink:href="/hima/assets/hima-social-icons.svg#rss"></use>
+      </svg>
+    </a>
+  </li><li class="social-list__link">
+    <a rel="me" href="https://www.github.com" aria-label="github">
+      <svg aria-hidden="true">
+        <use xlink:href="/hima/assets/hima-social-icons.svg#github"></use>
+      </svg>
+    </a>
+  </li><li class="social-list__link">
+    <a rel="me" href="https://www.linkedin.com" aria-label="linkedin">
+      <svg aria-hidden="true">
+        <use xlink:href="/hima/assets/hima-social-icons.svg#linkedin"></use>
+      </svg>
+    </a>
+  </li><li class="social-list__link">
+    <a rel="me" href="https://www.instagram.com" aria-label="instagram">
+      <svg aria-hidden="true">
+        <use xlink:href="/hima/assets/hima-social-icons.svg#instagram"></use>
+      </svg>
+    </a>
+  </li></ul>
+<div class="footer__author">
+      <div class="footer__name">
+        Your name
+      </div>
+      <div class="footer__email">
+        <a href="mailto:youremail@domain.com">
+          youremail@domain.com
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
